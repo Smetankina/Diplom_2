@@ -6,11 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import ru.praktikum.yandex.client.OrderClient;
-import ru.praktikum.yandex.client.UserClient;
 import ru.praktikum.yandex.model.Data;
-import ru.praktikum.yandex.model.Order;
-import ru.praktikum.yandex.model.RandomUser;
-import ru.praktikum.yandex.model.User;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,10 +17,9 @@ import static org.hamcrest.CoreMatchers.equalTo;
 public class GetOrderNegativeTest {
 
     OrderClient orderClient = new OrderClient();
-    UserClient userClient = new UserClient();
-    User user = new RandomUser();
-    List<String> ingredients = new ArrayList<String>();
-    Order order = new Order(ingredients);
+
+    List<String> ingredients = new ArrayList<>();
+
 
 
     @Before

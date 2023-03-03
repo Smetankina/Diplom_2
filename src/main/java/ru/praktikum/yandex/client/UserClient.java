@@ -87,22 +87,7 @@ public class UserClient extends StellarBurgerClient {
                 .patch("/api/auth/user");
 
     }
-/*
 
-СПРОСИТЬ!!! ПОЧЕМУ НЕ РАБОТАЕТ
-    @Step
-    @Description("Logout Base url /api/auth/logout")
-    public Response logoutUser(User user){
-        String refreshToken = loginUser(user).then().extract().path("refreshToken").toString();
-        Gson gson = new Gson();
-        String jsonString = "{\"token\": \""+ refreshToken+"\"}";
-
-
-        return given().spec(baseSpec())
-                .body(gson.toJson(jsonString))
-                .when()
-                .post("/api/auth/logout");
-    }*/
 
 
 

@@ -2,7 +2,6 @@ package ru.praktikum.yandex.userTest;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.After;
 import org.junit.Test;
 import ru.praktikum.yandex.client.UserClient;

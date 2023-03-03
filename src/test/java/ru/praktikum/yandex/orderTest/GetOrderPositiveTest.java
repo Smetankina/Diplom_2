@@ -22,7 +22,7 @@ public class GetOrderPositiveTest {
     OrderClient orderClient = new OrderClient();
     UserClient userClient = new UserClient();
     User user = new RandomUser();
-    List<String> ingredients = new ArrayList<String>();
+    List<String> ingredients = new ArrayList<>();
     Order order = new Order(ingredients);
 
 
@@ -48,7 +48,7 @@ public class GetOrderPositiveTest {
 
     @Test
     @Description("Get order of user with Token")
-    @DisplayName("")
+    @DisplayName("Get order of user with Token")
     public void checkGetOrderUserWithToken() {
         userClient.registerUser(user);
         String accessToken = userClient.loginUser(user).then().extract().path("accessToken").toString().substring(7);
